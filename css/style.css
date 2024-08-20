@@ -232,16 +232,9 @@ h6 {
   }
 }
 
-.header {
-  z-index: 10;
-  position: fixed;
-  width: 100%;
-}
-
 .cookies-header {
-  z-index: 2;
+  z-index: 12;
   position: relative;
-  width: 100%;
   background: #feece0;
 }
 
@@ -359,8 +352,8 @@ h6 {
 }
 
 .main-header {
-  z-index: 1;
-  position: fixed;
+  z-index: 12;
+  position: relative;
   width: 100%;
 }
 
