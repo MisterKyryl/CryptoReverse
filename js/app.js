@@ -4089,35 +4089,144 @@
         });
     }
     function initSliders() {
+        if (document.querySelector(".scammers__slider")) new swiper_core_Swiper(".scammers__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 2,
+            spaceBetween: 10,
+            speed: 800,
+            pagination: {
+                el: ".actions-scammers-pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".actions-scammers-button-prev",
+                nextEl: ".actions-scammers-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                992: {
+                    slidesPerView: 4
+                },
+                1200: {
+                    slidesPerView: 5
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".we-are__slider")) new swiper_core_Swiper(".we-are__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 800,
+            pagination: {
+                el: ".actions-we-are-pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".actions-we-are-button-prev",
+                nextEl: ".actions-we-are-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".testimonials-main__slider")) new swiper_core_Swiper(".testimonials-main__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 800,
+            pagination: {
+                el: ".actions-testimonials-main-pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".actions-testimonials-main-button-prev",
+                nextEl: ".actions-testimonials-main-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".video-reviews__slider")) new swiper_core_Swiper(".video-reviews__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            speed: 800,
+            pagination: {
+                el: ".video-reviews-actions-pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".video-reviews-actions-button-prev",
+                nextEl: ".video-reviews-actions-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                }
+            },
+            on: {}
+        });
         if (document.querySelector(".articles__slider")) new swiper_core_Swiper(".articles__slider", {
             modules: [ Navigation, Pagination ],
             observer: true,
             observeParents: true,
             slidesPerView: 1,
-            spaceBetween: 30,
-            autoHeight: true,
+            spaceBetween: 20,
             speed: 800,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".actions-articles-pagination",
                 clickable: true
             },
             navigation: {
-                prevEl: ".swiper-button-prev",
-                nextEl: ".swiper-button-next"
+                prevEl: ".actions-articles-button-prev",
+                nextEl: ".actions-articles-button-next"
             },
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    autoHeight: true,
                     spaceBetween: 10
                 },
                 768: {
                     slidesPerView: 2,
                     spaceBetween: 20
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 30
                 }
             },
             on: {}
