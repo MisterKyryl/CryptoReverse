@@ -14,6 +14,13 @@
             document.documentElement.classList.add(className);
         }));
     }
+    function addLoadedClass() {
+        window.addEventListener("load", (function() {
+            setTimeout((function() {
+                document.documentElement.classList.add("loaded");
+            }), 0);
+        }));
+    }
     let _slideUp = (target, duration = 500, showmore = 0) => {
         if (!target.classList.contains("_slide")) {
             target.classList.add("_slide");
@@ -4502,6 +4509,7 @@
     }));
     window["FLS"] = true;
     isWebp();
+    addLoadedClass();
     menuInit();
     spollers();
 })();
