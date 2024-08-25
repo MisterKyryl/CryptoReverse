@@ -3315,10 +3315,19 @@ textarea::placeholder {
 .testimonials__image img {
   content: "";
   position: fixed;
-  width: 61.8125rem;
-  height: 43.4375rem;
   bottom: -20%;
   right: 0;
+}
+
+.testimonials__image img::before {
+  content: "";
+  content: "";
+  position: fixed;
+  width: 61.8125rem;
+  height: 43.4375rem;
+  bottom: 0;
+  right: 0;
+  background: url("../img/testimonials/testimonials/bg.svg") no-repeat bottom right;
 }
 
 .testimonials__image::before {
