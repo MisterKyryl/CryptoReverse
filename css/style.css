@@ -3318,18 +3318,7 @@ textarea::placeholder {
   width: 61.8125rem;
   height: 43.4375rem;
   bottom: -20%;
-}
-
-@supports (right: clamp( -12.5rem , -17.5495049505rem  +  16.8316831683vw , -1.875rem )) {
-  .testimonials__image img {
-    right: clamp( -12.5rem , -17.5495049505rem  +  16.8316831683vw , -1.875rem );
-  }
-}
-
-@supports not (right: clamp( -12.5rem , -17.5495049505rem  +  16.8316831683vw , -1.875rem )) {
-  .testimonials__image img {
-    right: calc(-12.5rem + 10.625*(100vw - 30rem)/63.125);
-  }
+  right: 0;
 }
 
 .testimonials__image::before {
