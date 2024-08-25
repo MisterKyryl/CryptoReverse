@@ -4271,7 +4271,7 @@
             observer: true,
             observeParents: true,
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
             speed: 800,
             pagination: {
                 el: ".actions-articles-pagination",
