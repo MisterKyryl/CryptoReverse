@@ -713,7 +713,18 @@ textarea::placeholder {
   position: fixed;
   width: 104.4375rem;
   height: 73.375rem;
-  right: -2%;
+}
+
+@supports (right: clamp( -40.625rem , -59.0408415842rem  +  61.3861386139vw , -1.875rem )) {
+  .consultation__image img {
+    right: clamp( -40.625rem , -59.0408415842rem  +  61.3861386139vw , -1.875rem );
+  }
+}
+
+@supports not (right: clamp( -40.625rem , -59.0408415842rem  +  61.3861386139vw , -1.875rem )) {
+  .consultation__image img {
+    right: calc(-40.625rem + 38.75*(100vw - 30rem)/63.125);
+  }
 }
 
 @supports (bottom: clamp( -6.25rem , -18.6997993213rem  +  20.0803214859vw , 0.0000000625rem )) {
@@ -4649,10 +4660,6 @@ textarea::placeholder {
 }
 
 @media (max-width: 61.99875em) {
-  .consultation__image img {
-    display: none;
-  }
-
   .faq__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
