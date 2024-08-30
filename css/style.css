@@ -4283,8 +4283,8 @@ textarea::placeholder {
 	}
 	.block-contact__input {
 		-webkit-box-flex: 0;
-		-ms-flex: 0 1 185px;
-		flex: 0 1 185px;
+		-ms-flex: 0 1 205px;
+		flex: 0 1 205px;
 	}
 }
 @media (min-width: 61.99875em) {
@@ -4467,11 +4467,11 @@ textarea::placeholder {
 		-ms-flex: 0 0 121px;
 		flex: 0 0 121px;
 	}
-}
-.block-contact__input.input_code {
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 80px;
-	flex: 0 0 80px;
+	.block-contact__input.input_code {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 80px;
+		flex: 0 0 80px;
+	}
 }
 @media (max-width: 75em) {
 	.body-types {
@@ -4712,6 +4712,11 @@ textarea::placeholder {
 	}
 	.info {
 		padding-bottom: 30vh;
+	}
+	.block-contact__input.input_code {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 80px;
+		flex: 0 0 80px;
 	}
 }
 @media (max-width: 47.99875em) {
@@ -5137,5 +5142,78 @@ textarea::placeholder {
 @media (min-width: 61.99875em) {
 	.webp .recovered__image-07 {
 		background: url(../img/main/recovered/02.webp) no-repeat bottom left;
+	}
+}
+.top-footer__body {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.address-top-footer__item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.top-footer__menu {
+	flex: 0 0 140px;
+}
+.top-footer__address {
+	flex: 0 1 280px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.address-top-footer__text {
+	line-height: 1.2;
+	color: #fff;
+	text-align: center;
+}
+.address-top-footer__phone {
+	text-align: center;
+	color: #fff;
+	line-height: 1.2;
+}
+.address-top-footer__link {
+	position: relative;
+}
+.address-top-footer__link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0.0625rem;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	-webkit-transition: width .4s ease 0s;
+	transition: width .4s ease 0s;
+}
+.address-top-footer__link:hover::before {
+	width: 100%;
+}
+.top-footer__content {
+	display: none;
+}
+@supports (font-size: clamp(1.125rem, 0.890625rem + 0.78125vw, 1.375rem)) {
+	.address-top-footer__text {
+		font-size: clamp(1.125rem, 0.890625rem + 0.78125vw, 1.375rem);
+	}
+}
+@supports (font-size: clamp(1.125rem, 0.890625rem + 0.78125vw, 1.375rem)) {
+	.address-top-footer__phone {
+		font-size: clamp(1.125rem, 0.890625rem + 0.78125vw, 1.375rem);
+	}
+}
+@media (max-width: 47.99875em) {
+	.top-footer__body {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.top-footer__body:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.top-footer__content {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
 	}
 }
